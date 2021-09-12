@@ -1,0 +1,246 @@
+{
+   "name": "networkcalc",
+   "author": "",
+   "version": 0.0,
+   "categories": [],
+   "description": "",
+   "icon": null,
+   "requirements": {
+      "jimi_min_version": null,
+      "jimi_max_version": null,
+      "plugins": []
+   },
+   "collections": {},
+   "triggers": {},
+   "actions": {
+      "networkCalcSubnetCalculator": {
+         "display_name": "networkCalcSubnetCalculator",
+         "className": "_networkCalcSubnetCalculator",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "cidr",
+               "schema_value": "cidr",
+               "type": "input",
+               "label": "cidr",
+               "description": ""
+            },
+            {
+               "schema_item": "binaryMode",
+               "schema_value": "binaryMode",
+               "type": "checkbox",
+               "label": "binaryMode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "networkCalcBinaryCalculator": {
+         "display_name": "networkCalcBinaryCalculator",
+         "className": "_networkCalcBinaryCalculator",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "binaryNumber",
+               "schema_value": "binaryNumber",
+               "type": "input",
+               "label": "binaryNumber",
+               "description": ""
+            },
+            {
+               "schema_item": "fromBase",
+               "schema_value": "fromBase",
+               "type": "input",
+               "label": "fromBase",
+               "description": ""
+            },
+            {
+               "schema_item": "toBase",
+               "schema_value": "toBase",
+               "type": "input",
+               "label": "toBase",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "networkCalcGetCertificate": {
+         "display_name": "networkCalcGetCertificate",
+         "className": "_networkCalcGetCertificate",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "domain",
+               "schema_value": "domain",
+               "type": "input",
+               "label": "domain",
+               "description": ""
+            },
+            {
+               "schema_item": "port",
+               "schema_value": "port",
+               "type": "input",
+               "label": "port",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "networkCalcDNSLookup": {
+         "display_name": "networkCalcDNSLookup",
+         "className": "_networkCalcDNSLookup",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "hostname",
+               "schema_value": "hostname",
+               "type": "input",
+               "label": "hostname",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "networkCalcWHOISLookup": {
+         "display_name": "networkCalcWHOISLookup",
+         "className": "_networkCalcWHOISLookup",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "hostname",
+               "schema_value": "hostname",
+               "type": "input",
+               "label": "hostname",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      }
+   },
+   "settings": {}
+}
